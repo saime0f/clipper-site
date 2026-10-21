@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connecting… — Clipper</title>
+<style>body{font-family:system-ui,sans-serif;background:#0e0e10;color:#eee;display:flex;align-items:center;justify-content:center;min-height:90vh;text-align:center;padding:20px}</style></head>
+<body><div id="msg">Connecting your account…</div>
+<script>
+// OAuth return page: forwards the authorization code back to the Clipper app running on the owner's computer.
+// The app's address travels in the "state" parameter; only private addresses (Tailscale *.ts.net or localhost) are allowed.
+(function () {
+  var q = new URLSearchParams(location.search), msg = document.getElementById("msg");
+  try {
+    var s = q.get("state") || "";
+    var data = JSON.parse(atob(s.replace(/-/g, "+").replace(/_/g, "/") + "===".slice((s.length + 3) % 4)));
+    var target = new URL(data.r);
+    var host = target.hostname;
+    var okHost = host === "localhost" || host === "127.0.0.1" || /\.ts\.net$/.test(host);
+    if (!okHost || !/^\/oauth\/(tiktok|youtube)\/callback$/.test(target.pathname)) throw new Error("bad target");
+    ["code", "state", "error", "error_description", "scopes"].forEach(function (k) { if (q.get(k)) target.searchParams.set(k, q.get(k)); });
+    location.replace(target.toString());
+  } catch (e) {
+    msg.textContent = "Could not return to Clipper. Start the connection again from the app settings.";
+  }
+})();
+</script></body></html>
