@@ -1,15 +1,101 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Clipper — Clipper</title><style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;padding:32px 18px;line-height:1.6;color:#1b1b1f;background:#fafafa}
-h1{font-size:28px}h2{font-size:19px;margin-top:28px}a{color:#5b3fe0}nav a{margin-right:16px}footer{margin-top:40px;color:#777;font-size:13px}
-@media(prefers-color-scheme:dark){body{background:#111114;color:#e8e8ea}a{color:#a891ff}}</style></head><body><nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
-<h1>Clipper</h1>
-<p>Clipper is a personal, self-hosted tool that turns long videos into short vertical clips (9:16) with burned-in subtitles,
-and lets its owner publish those clips to their own TikTok, YouTube and Instagram accounts.</p>
-<h2>How it works</h2>
-<ol>
-<li>The owner adds a video (a link or a file). Clipper transcribes the speech and cuts the video into 70–95 second clips.</li>
-<li>Each clip gets subtitles and a background gameplay video in the bottom half. The owner can edit subtitles, titles and descriptions.</li>
-<li>When the owner chooses to publish, Clipper uploads the clip to the account the owner connected, with the title, description and privacy settings the owner selected on the publish screen.</li>
-</ol>
-<h2>Who can use it</h2>
-<p>Clipper runs on the owner's own computer and is accessible only to the owner over a private network. It is not a public service and has no other users.</p>
-<p>See the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p><footer>Clipper · contact: <a href="mailto:ogoodnews.daily@gmail.com">ogoodnews.daily@gmail.com</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clipper</title>
+<meta name="description" content="Clipper cuts long videos into captioned vertical clips and posts them to TikTok, YouTube and Instagram.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="nav"><div class="container">
+  <a class="brand" href="index.html"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#f7f7f8"/><circle cx="50" cy="50" r="26" fill="none" stroke="#d9d9de" stroke-width="11"/><path d="M50 24 A26 26 0 0 1 76 50" fill="none" stroke="#111111" stroke-width="11" stroke-linecap="round"/></svg>Clipper</a>
+  <div class="nav-right"><nav aria-label="Main"><ul><li><a href="index.html" aria-current="page">Features</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></nav><a class="btn btn--sm" href="contact.html">Contact</a></div>
+</div></header>
+<main>
+<section class="hero"><div class="container">
+  <div class="hero-text">
+    <h1>Long video in. Shorts out.</h1>
+    <p class="lead">Clipper cuts long videos into captioned vertical clips and posts them.</p>
+    <div class="actions"><a class="btn btn--primary" href="mailto:ogoodnews.daily@gmail.com?subject=Clipper%20invite">Ask for an invite</a></div>
+  </div>
+  <div class="phones">
+    <figure class="phone"><div class="frame"><img src="shots/projects.jpg" alt="Clipper projects screen: two Blender Studio films, each cut into numbered parts" width="1206" height="2334" fetchpriority="high"></div><figcaption>Projects</figcaption></figure>
+    <figure class="phone"><div class="frame"><img src="shots/publish.jpg" alt="Clipper publishing screen with TikTok, YouTube and Instagram and a caption" width="1206" height="2334"></div><figcaption>Publishing a part</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="section" id="route"><div class="container">
+  <div class="head"><h2>From a link to a post</h2><p class="lead">Four stops. You only make the first one.</p></div>
+  <ol class="route">
+    <li><span class="plate" aria-hidden="true">1</span><h3>Paste a link</h3><p>A YouTube link or your own file. Pick the stretch you want.</p></li>
+    <li><span class="plate" aria-hidden="true">2</span><h3>Transcribe</h3><p>Speech becomes text on your own computer, in English or Spanish.</p></li>
+    <li><span class="plate" aria-hidden="true">3</span><h3>Cut and caption</h3><p>Parts of 70 to 95 seconds, subtitles on top, gameplay below.</p></li>
+    <li><span class="plate" aria-hidden="true">4</span><h3>Post on time</h3><p>TikTok, YouTube Shorts and Instagram Reels, at the hours you set.</p></li>
+  </ol>
+</div></section>
+
+<section class="section band--ink" id="schedule"><div class="container">
+  <div class="head"><h2>Today’s posts</h2><p class="lead">Autopost works through the queue so you don’t have to.</p></div>
+  <table class="board">
+    <thead><tr><th scope="col">Time</th><th scope="col">Clip</th><th scope="col" class="plat-col">Posts to</th><th scope="col" class="status">Status</th></tr></thead>
+    <tbody>
+      <tr><td class="time">14:37</td><td class="clip">Tears of Steel<small>Part 2 of 9</small></td><td class="plat"><span class="sq sq--youtube" aria-hidden="true"></span><span class="sq sq--instagram" aria-hidden="true"></span><span class="sq sq--tiktok" aria-hidden="true"></span><span>3 apps</span></td><td class="status"><span class="tag tag--next">Next</span></td></tr>
+      <tr><td class="time">16:53</td><td class="clip">Tears of Steel<small>Part 3 of 9</small></td><td class="plat"><span class="sq sq--youtube" aria-hidden="true"></span><span class="sq sq--instagram" aria-hidden="true"></span><span class="sq sq--tiktok" aria-hidden="true"></span><span>3 apps</span></td><td class="status"><span class="tag">Scheduled</span></td></tr>
+      <tr><td class="time">20:13</td><td class="clip">Tears of Steel<small>Part 4 of 9</small></td><td class="plat"><span class="sq sq--youtube" aria-hidden="true"></span><span class="sq sq--instagram" aria-hidden="true"></span><span class="sq sq--tiktok" aria-hidden="true"></span><span>3 apps</span></td><td class="status"><span class="tag">Scheduled</span></td></tr>
+      <tr><td class="time">07:36</td><td class="clip">Tears of Steel<small>Part 5 of 9</small></td><td class="plat"><span class="sq sq--youtube" aria-hidden="true"></span><span class="sq sq--instagram" aria-hidden="true"></span><span class="sq sq--tiktok" aria-hidden="true"></span><span>3 apps</span></td><td class="status"><span class="tag">Tomorrow</span></td></tr>
+    </tbody>
+  </table>
+  <p class="board-foot">A sample day in the app. Times follow your phone’s time zone.</p>
+</div></section>
+
+<section class="section"><div class="container split">
+  <div>
+    <h2>Check every part before it posts</h2>
+    <p class="lead" style="margin-top:var(--space-md)">Each clip opens on your phone, ready to fix.</p>
+    <ul class="facts">
+      <li><b>Subtitles</b><span>Edit any word. Pick a style.</span></li>
+      <li><b>Trim</b><span>Move the start and end by the second.</span></li>
+      <li><b>Gameplay</b><span>Swap the video under the speaker.</span></li>
+      <li><b>Quality check</b><span>Silence and cut-off words are flagged before posting.</span></li>
+    </ul>
+  </div>
+  <figure class="phone"><div class="frame"><img src="shots/clip.jpg" alt="A clip in Clipper: the video on top, gameplay below, tools for trim, gameplay, download and subtitles" width="1206" height="2334"></div><figcaption>One part, ready to check</figcaption></figure>
+</div></section>
+
+<section class="section band--paper2" id="tiktok"><div class="container rows-wrap">
+  <div><h2>Your TikTok account, your call</h2><p class="lead">What Clipper asks for, and why.</p></div>
+  <ul class="rows">
+    <li><h3>Log in with TikTok</h3><p>You connect your own account with Login Kit. Clipper reads your display name and avatar (<code>user.info.basic</code>) to show who is posting.</p></li>
+    <li><h3>Post what you approve</h3><p>Clipper uploads only the clips you choose, with the caption and privacy setting you pick on the publish screen (<code>video.publish</code>).</p></li>
+    <li><h3>Kept on your computer</h3><p>Access tokens stay in a database on your own PC. There is no Clipper server and no analytics.</p></li>
+    <li><h3>Disconnect any time</h3><p>One tap in Settings deletes the tokens. You can also remove access in TikTok under Security and permissions.</p></li>
+  </ul>
+</div></section>
+
+<section class="section close"><div class="container">
+  <div>
+    <h2>Clipper is invite-only</h2>
+    <p class="lead" style="margin-top:var(--space-md)">Write to us and we will set up your account.</p>
+    <div class="actions"><a class="btn btn--primary" href="mailto:ogoodnews.daily@gmail.com?subject=Clipper%20invite">Ask for an invite</a></div>
+  </div>
+  <ul class="needs">
+    <li><span>Runs on</span><span>Windows PC, NVIDIA card</span></li>
+    <li><span>Use it from</span><span>Your phone</span></li>
+    <li><span>Languages</span><span>English, Spanish</span></li>
+    <li><span>Posts to</span><span>TikTok, YouTube, Instagram</span></li>
+  </ul>
+</div></section>
+</main>
+<footer class="footer"><div class="container">
+  <div class="mast"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#f7f7f8"/><circle cx="50" cy="50" r="26" fill="none" stroke="#d9d9de" stroke-width="11"/><path d="M50 24 A26 26 0 0 1 76 50" fill="none" stroke="#111111" stroke-width="11" stroke-linecap="round"/></svg>Clipper</div>
+  <div class="foot-row"><ul><li><a href="index.html">Features</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:ogoodnews.daily@gmail.com">ogoodnews.daily@gmail.com</a></li></ul>
+  <small>Clipper is not affiliated with TikTok, YouTube or Instagram.<br>Screens show <a href="https://mango.blender.org">Tears of Steel</a>, <a href="https://durian.blender.org">Sintel</a> and <a href="https://peach.blender.org">Big Buck Bunny</a> by the Blender Foundation, licensed CC BY.</small></div>
+</div></footer>
+</body>
+</html>
