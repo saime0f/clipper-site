@@ -12,7 +12,7 @@
     var target = new URL(data.r);
     var host = target.hostname;
     var okHost = host === "localhost" || host === "127.0.0.1" || /\.ts\.net$/.test(host);
-    if (!okHost || !/^\/oauth\/(tiktok|youtube)\/callback$/.test(target.pathname)) throw new Error("bad target");
+    if (!okHost || !/^\/oauth\/(tiktok|youtube|instagram)\/callback$/.test(target.pathname)) throw new Error("bad target");
     ["code", "state", "error", "error_description", "scopes"].forEach(function (k) { if (q.get(k)) target.searchParams.set(k, q.get(k)); });
     location.replace(target.toString());
   } catch (e) {
